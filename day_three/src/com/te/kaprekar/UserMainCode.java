@@ -21,9 +21,9 @@ public class UserMainCode {
 			z = z * 10;
 		}
 		left = y % z;
-		System.out.println(left);
+		//System.out.println(left);
 		right = y / z;
-		System.out.println(right);
+		//System.out.println(right);
 
 		if (left + right == n)
 			return 1;
