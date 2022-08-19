@@ -16,19 +16,41 @@ public class UserMainCode {
 			count++;
 			x = x / 10;
 		}
-	
+		System.out.println(y);
+	    System.out.println(count);	
 		for (int i = 1; i <= (count / 2); i++) {
+			
 			z = z * 10;
 		}
+		
+		System.out.println(z);
+		if(count%2!=0) {
+			
+			left = y % (z*10);
+			right = y / (z*10) ;
+			System.out.println(left);
+			System.out.println(right);
+		
+			if(left != right) {
+				
+				left = y % z;
+				right = y / z;
+				System.out.println("2");
+			}
+		}
+		else {
+			
 		left = y % z;
-		//System.out.println(left);
 		right = y / z;
-		//System.out.println(right);
+		System.out.println(" 3");
+		}
 
 		if (left + right == n)
 			return 1;
 		else
 			return -1;
 	}
+	   
+	
 
 }
